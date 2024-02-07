@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #6394f5;
+    --secundary-color: #0D1C38;
+    --clean-color: #fff;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--clean-color);
+}
+
+.found-color {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+.found-color__clean {
+    width: 10%;
+    height: 100%;
+    background-color: var(--secundary-color);
+}
+
+
+/* PRINCIPAL */
+
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.calculate-expenses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.calculate-expenses__form {
+    width: 80%;
+    max-width: 300px;
+    height: 65%;
+    background-color: var(--secundary-color);
+    border-radius: 17px;
+}
+.calculate-expenses__form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.calculate-expenses__form h2 {
+    margin: 0 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+.calculate-expenses__form span {
+    display: block;
+    font-size: 1.4rem;
+}
+.calculate-expenses__form label {
+    width: 80%;
+}
+.calculate-expenses__form input {
+    width: 100%;
+    height: 25px;
+    margin-top: 2px;
+    border-radius: 5px;
+    border: solid 2px #333;
+    outline: none;
+    background-color: var(--secundary-color);
+    color: var(--clean-color);
+}
+.calculate-expenses__form .calculate-expenses__form--add {
+    display: block;
+    width: 50%;
+    height: 35px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    background-color: var(--clean-color);
+    color: var(--secundary-color);
+}
+
+.calculate-expenses__total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+    height: 20%;
+    background-color: var(--secundary-color);
+    border-radius: 17px;
+}
+.calculate-expenses__total p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}

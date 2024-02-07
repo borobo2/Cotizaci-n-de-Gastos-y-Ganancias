@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="recaudacion,follow" />
+        <meta name="description" content="La mejor pagina para llevar la cuenta de tus ingresos y tus gastos" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)" />
+        <title>Recaudación</title>
+    </head>
+    <body>
+        <div class="found-color">
+            <div class="found-color__clean"></div>
+            <main>
+                <section class="calculate-expenses">
+                    <article class="calculate-expenses__form">
+                        <form action="codigo.js">
+                            <div>
+                                <h2>¡Suma todo lo que ganaste!</h2>
+                            </div>
+                            <label for="alumnos">
+                                <span>Alumnos que pagaron</span>
+                                <input type="number" name="alumnos" id="alumnos" required />
+                            </label>
+                            <label for="monto-principal">
+                                <span>Monto Principal</span>
+                                <input type="number" name="monto-principal" id="monto-principal" required />
+                            </label>
+                            <label for="monto-secundario">
+                                <span>Monto Secundario</span>
+                                <input type="number" name="monto-secundario" id="monto-secundario" required />
+                            </label>
+                            <label for="gastos">
+                                <span>Gastos</span>
+                                <input type="number" name="gastos" id="gastos" />
+                            </label>
+                            <label for="boton">
+                                <input type="button" name="boton" id="boton" required value="Sumar" class="calculate-expenses__form--add"/>
+                            </label>
+                        </form>
+                    </article>
+                    <article class="calculate-expenses__total">
+                        <p id="total"></p>
+                    </article>
+                </section> 
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

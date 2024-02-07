@@ -1,0 +1,19 @@
+.found-color {
+    flex-direction: row;
+    align-items: center;
+}
+.found-color__clean {
+    width: 100%;
+    height: 10%;
+}
+
+.calculate-expenses {
+    flex-direction: row;
+}
+
+.calculate-expenses__total {
+    height: 30%;
+}
+.calculate-expenses__total p {
+    font-size: 3rem;
+}
